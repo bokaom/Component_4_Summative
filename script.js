@@ -10,10 +10,10 @@ export let customers = [];
 // =======================================
 
 //Fetch The DOM Elements
-export const customerInput = "";
-export const addBtn = "";
-export const customerList = "";
-export const counter = "";
+export const customerInput = document.getElementById("customerInput");
+export const addBtn = document.getElementById("addBtn");
+export const customerList = document.getElementById("customerList");
+export const counter = document.getElementById("counter");
 
 // Complete this function
 
@@ -21,19 +21,19 @@ export function addCustomer()
 {
 
     // Retrieve the customer's name
-
+let customername = customerInput.value
 
 
     // Add customer to array
-
+customer.push(customername)
 
 
     // Clear the textbox
-
+customerinput.value = 
 
 
     // Call displayCustomers()
-
+displaycustomer()
 
 
 }
@@ -47,27 +47,27 @@ export function displayCustomers()
 {
 
     // Clear the list
-
+customerlist.innerHTML = ""
 
 
     // Loop through the array
-
+let i = 0 < customer.length;
 
 
         // Create a list item
-
+let listitem = document.createatrribute
 
 
         // Display customer
-
+displaycustomer()
 
 
         // Add list item to UL
-
+listitem.textcontent = customer(i)
 
 
     // Update customer counter
-
+customer.textcontent = customer.lemgth
 
 
 }
